@@ -13,4 +13,5 @@ class Post(models.Model):
     content = models.TextField()
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
+    update_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
