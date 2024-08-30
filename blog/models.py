@@ -36,7 +36,6 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
     approved = models.BooleanField(default=False)
-    challenge = models.FloatField(default=3)
 
     # …
     class Meta:
