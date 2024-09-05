@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block main_content %}
 {% load static %}
 
 <div class="masthead">
@@ -23,6 +23,7 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
+                <h2>{{ coder }}</h2>
                 <p class="card-text">
                     {{ post.content | safe }}
                 </p>
@@ -31,4 +32,4 @@
     </div>
 </div>
 
-{% endblock content %}
+{% endblock main_content %}
