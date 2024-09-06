@@ -9,5 +9,4 @@ class PostAdmin(SummernoteModelAdmin):
 
     list_display = ('title', 'update_on')
     search_fields = ['title']
-    # list_filter = ('update_on')
     summernote_fields = ('content')
