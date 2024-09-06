@@ -22,7 +22,7 @@ from django.urls import path, include
 urlpatterns = [
     # Deleted
     # path('blog/', blog_views.index, name='index'),
-    path('about/', include("about.urls"), name=""),
+    path('about/', include("about.urls"), name="about-urls"),
     path('admin/', admin.site.urls),
     path("", include("blog.urls"), name="blog-urls"),
     path('summernote/', include('django_summernote.urls')),
